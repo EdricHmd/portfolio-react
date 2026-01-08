@@ -1,1 +1,39 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  /* Force dark mode colors */
+  html {
+    color-scheme: dark;
+  }
+  
+  body {
+    @apply m-0 font-outfit bg-[#111] text-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, button {
+    @apply m-0 text-white;
+  }
+  
+  h2 {
+    @apply text-4xl md:text-5xl lg:text-[58px] leading-tight;
+  }
+
+  /* Disable any system light mode preferences */
+  * {
+    @apply border-gray-700;
+  }
+}
+
+@layer utilities {
+  .container-custom {
+    @apply max-w-[1440px] mx-auto px-5 lg:px-10;
+  }
+  
+  /* Ensure all backgrounds are dark */
+  .bg-default {
+    @apply bg-[#111];
+  }
+}

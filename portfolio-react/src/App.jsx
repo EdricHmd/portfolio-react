@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full bg-[#111] text-white">
       <div className="max-w-[1440px] mx-auto px-5 py-5 lg:px-10">
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-8">
           {/* Sidebar */}
