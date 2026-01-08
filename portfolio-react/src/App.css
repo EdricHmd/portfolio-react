@@ -1,0 +1,33 @@
+/* Additional custom styles for the portfolio */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: relative !important;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 48px !important;
+  }
+
+  h2 {
+    font-size: 36px !important;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .button-arrow-left,
+  .button-arrow-right {
+    top: 42% !important;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
